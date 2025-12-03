@@ -8,7 +8,8 @@ Desarrollo del juego de la serpiente en Python, incluyendo diagramas de flujo, a
 - Git y GitHub
 
 ## Diagramas de flujo
-(Los diagramas serán añadidos aquí cuando estén finalizados)
+### 1. Flujo general del juego
+[Diagrama 1](diagramas/diagrama1_flujo_general.png)
 
 ## Avance del código
 (Próximamente se agregará el avance de programación)
