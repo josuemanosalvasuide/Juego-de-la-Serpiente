@@ -1,10 +1,16 @@
 from motor import VENTANA_ANCHO, dibujar_imagen, escribir, click_dentro
 
 BOTONES = [
-    ("Iniciar juego", 190, 190, 220, 60, "juego"),
+    ("Iniciar juego", 190, 190, 220, 60, "nivel"),     # ✅ antes "juego"
     ("Marcador",      190, 270, 220, 60, "marcador"),
     ("Reglas",        190, 350, 220, 60, "reglas"),
     ("Salir",         190, 430, 220, 60, "salir"),
+]
+
+BOTONES_NIVEL = [
+    ("Facil",    190, 220, 220, 60, 1),
+    ("Medio",    190, 300, 220, 60, 2),
+    ("Dificil",  190, 380, 220, 60, 3),
 ]
 
 def dibujar(pantalla, boton_imagen):
@@ -30,5 +36,31 @@ def detectar_click(mx, my):
 
         if click_dentro(mx, my, x, y, w, h):
             return estado
+
+    return None
+
+def dibujar_nivel(pantalla, boton_imagen):
+    escribir(pantalla, "SELECCIONAR NIVEL", VENTANA_ANCHO // 2, 140, 34)
+
+    for boton in BOTONES_NIVEL:
+        texto = boton[0]
+        x = boton[1]
+        y = boton[2]
+        w = boton[3]
+        h = boton[4]
+
+        dibujar_imagen(pantalla, boton_imagen, x, y)
+        escribir(pantalla, texto, x + w // 2, y + h // 2, 24)
+
+def detectar_click_nivel(mx, my):
+    for boton in BOTONES_NIVEL:
+        x = boton[1]
+        y = boton[2]
+        w = boton[3]
+        h = boton[4]
+        nivel = boton[5]
+
+        if click_dentro(mx, my, x, y, w, h):
+            return nivel
 
     return None

@@ -2,7 +2,7 @@ import pygame
 
 VENTANA_ANCHO = 600
 VENTANA_ALTO = 600
-FPS = 60
+FPS = 5
 
 def iniciar_ventana(titulo="Juego de la serpiente"):
     pygame.init()
