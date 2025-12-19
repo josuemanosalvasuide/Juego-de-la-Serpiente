@@ -130,7 +130,7 @@ En general, los resultados obtenidos evidencian que los conocimientos adquiridos
 Como parte del proyecto integrador, se elaboró una presentación donde se explica de forma visual y ordenada el desarrollo del juego Snake, la aplicación de la lógica de programación, el cronograma por semanas, los algoritmos utilizados y los resultados obtenidos.
 
 👉 Puedes ver la presentación aquí:  
-[📄 Ver presentación del proyecto](presentacion/Proyecto_Integrador_Logica_Programacion.pdf)
+[📄 Ver presentación del proyecto](presentacion/proyecto_integrador.pdf)
 
 ---
 ## ⚠️ Implicaciones y Limitaciones
