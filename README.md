@@ -124,6 +124,14 @@ En general, los resultados obtenidos evidencian que los conocimientos adquiridos
 
 ---
 
+## 📄 Presentación del Proyecto
+
+Como parte del proyecto integrador, se elaboró una presentación donde se explica de forma visual y ordenada el desarrollo del juego Snake, la aplicación de la lógica de programación, el cronograma por semanas, los algoritmos utilizados y los resultados obtenidos.
+
+👉 Puedes ver la presentación aquí:  
+[📄 Ver presentación del proyecto](presentacion/Proyecto_Integrador_Logica_Programacion.pdf)
+
+---
 ## ⚠️ Implicaciones y Limitaciones
 Una de las principales implicaciones de este proyecto es que demuestra cómo los conceptos básicos de programación pueden aplicarse para desarrollar un videojuego funcional, integrando lógica, eventos e interfaz gráfica. El proyecto refuerza la importancia de organizar el código de forma modular, lo cual facilita su comprensión, mantenimiento y posibles mejoras futuras.
 
