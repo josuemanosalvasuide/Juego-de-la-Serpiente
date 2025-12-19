@@ -68,6 +68,7 @@ Este proyecto ayuda a reforzar la lógica de programación y a comprender cómo 
 - `assets.py` → Carga de recursos gráficos  
 - `assets/` → Imágenes y sprites del juego  
 - `diagramas/` → Diagramas de flujo del funcionamiento  
+- `presentacion/` → Presentacion en pdf  
 
 ---
 
