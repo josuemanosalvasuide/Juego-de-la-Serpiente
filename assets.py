@@ -1,4 +1,3 @@
-# assets.py
 from motor import cargar_imagen, VENTANA_ANCHO, VENTANA_ALTO
 
 def cargar_assets():

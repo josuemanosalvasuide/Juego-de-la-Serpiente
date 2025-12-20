@@ -1,7 +1,7 @@
 from motor import VENTANA_ANCHO, dibujar_imagen, escribir, click_dentro
 
 BOTONES = [
-    ("Iniciar juego", 190, 190, 220, 60, "nivel"),     # ✅ antes "juego"
+    ("Iniciar juego", 190, 190, 220, 60, "nivel"),     
     ("Marcador",      190, 270, 220, 60, "marcador"),
     ("Reglas",        190, 350, 220, 60, "reglas"),
     ("Salir",         190, 430, 220, 60, "salir"),

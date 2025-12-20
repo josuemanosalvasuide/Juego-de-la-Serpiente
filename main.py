@@ -33,41 +33,40 @@ def main():
 
     while corriendo:
         for e in eventos():
-            if e.type == 256:  # QUIT
+            if e.type == 256:  
                 corriendo = False
 
-            # CLICK en botones del menú
-            if estado == "menu" and e.type == 1025:  # MOUSEBUTTONDOWN
+            if estado == "menu" and e.type == 1025:  
                 mx, my = e.pos
                 nuevo = menu.detectar_click(mx, my)
                 if nuevo == "salir":
                     corriendo = False
                 elif nuevo is not None:
-                    estado = nuevo   # puede ser "juego", "reglas", "marcador", "nivel"
+                    estado = nuevo   
 
-            # CLICK en selección de NIVEL
-            if estado == "nivel" and e.type == 1025:  # MOUSEBUTTONDOWN
+           
+            if estado == "nivel" and e.type == 1025:  
                 mx, my = e.pos
                 n = menu.detectar_click_nivel(mx, my)
                 if n is not None:
                     nivel = n
                     estado = "juego"
 
-            # CLICK en botones del GAME OVER
-            if estado == "game_over" and e.type == 1025:  # MOUSEBUTTONDOWN
+            
+            if estado == "game_over" and e.type == 1025:  
                 mx, my = e.pos
                 opcion = detectar_click_game_over(mx, my)
                 if opcion == "reiniciar":
-                    estado = "nivel"   # ✅ eliges nivel otra vez
+                    estado = "nivel"   
                 elif opcion == "menu":
                     estado = "menu"
 
-            # ESC para volver al menú desde cualquier pantalla (menos el juego)
-            if estado not in ("menu", "juego") and e.type == 768:  # KEYDOWN
-                if e.key == 27:  # ESC
+            
+            if estado not in ("menu", "juego") and e.type == 768:  
+                if e.key == 27:  
                     estado = "menu"
 
-        # DIBUJO
+       
         pantalla.blit(assets["fondo"], (0, 0))
 
         if estado == "menu":

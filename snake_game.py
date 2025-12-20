@@ -34,7 +34,7 @@ def cambiar_direccion(tecla, direccion_actual):
 
     return direccion_actual
 
-# sprite base cabeza mirando a la izquierda
+
 def sprite_cabeza(direccion, sprites):
     dx, dy = direccion
     cabeza = sprites["cabeza"]
@@ -60,7 +60,6 @@ def direccion_entre(a, b):
         return "izquierda" if ax > bx else "derecha"
 
 def sprite_cuerpo(prev, actual, next_, sprites):
-    # cola
     if next_ is None:
         d = direccion_entre(actual, prev)
         base = sprites["cola"]
@@ -173,9 +172,9 @@ def jugar(pantalla, reloj, assets, sprites, nivel=1):
 
         if cabeza == comida:
             puntaje += 1
-            velocidad += nivel  # facil +1, medio +2, dificil +3
+            velocidad += nivel  
 
-            if velocidad > 30:  # ✅ tope opcional para no volverse injugable
+            if velocidad > 30:  
                 velocidad = 30
 
             comida = generar_comida(serpiente)
